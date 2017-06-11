@@ -8,4 +8,5 @@ Java_com_wise_cc_evrca_MainActivity_stringFromJNI(
         jobject /* this */) {
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
+
 }
