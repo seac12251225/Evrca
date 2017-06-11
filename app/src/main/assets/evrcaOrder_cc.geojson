@@ -1,0 +1,77 @@
+{
+    
+    "status":{
+        //"orderId" : ""          // 下单人员ID
+        "orderNo" : "",         // 单号
+        "status" : "",          // 订单状态 0:未发送(挂单) 1:已发送(待审核)  2:已审核  3:审核不通过  4:生产中  5:已发货  6:已收货  7:完成
+        "time" : "",            // 下单时间 yyyy-MM-dd
+        
+    }
+    
+    
+    "carModel" : {          // 车型
+        "brand" : "",       // 品牌
+        "carNo" : "",       // 车牌号
+        "model" : "",       // 型号
+        "pics" : [],        // 效果图
+        "note" : ""         // 备注
+    },
+    
+    
+    "cushion" : {           // 座垫
+        //"material" : "",    // 材质
+        "middle" : "",      // 面中颜色
+        "around" : "",      // 面边
+        "border" : "",      // 滚边
+        "borderSide" : "",  // 包边
+        "Punching" : "",    // 打孔 bool
+        "middleCraftWork" : "",   // 工艺
+        "note" : ""         // 备注
+    },
+    
+    "foot" : {              // 脚垫
+        "padColor" : "",    // 脚垫颜色
+        "borderSide" : "",  // 包边颜色
+        "additional"[{"id":"","name":"幻影","color":""}]//附加选配
+        "note" : ""         // 备注
+    },
+    
+    "customerInfo" : {      // 客户信息
+        "name" : "",        // 客户姓名
+        "gender" : "",      // 性别 bool
+        "phone" : "",       // 手机号
+        "address" : "",     // 地址
+        "note" : ""         // 备注
+    },
+    
+    "shoppersInfo" : {      // 导购信息
+        "name" : "",        // 导购姓名
+        "id" : "",          // ID
+        "store" : "",       // 门店
+        "note" : ""         // 备注
+    }
+    
+    "receiptInfo" : {       // 收货信息
+        "name" : "",        // 收货人
+        "phone" : "",       // 手机号
+        "address" : "",     // 地址
+        "delivery_id" : ""  // 快递单号
+    }
+    
+    "checkInfo" : {         // 附加信息
+        "evrcaCheck" : "",// evrca 审核意见
+        "agentCheck" : "",// 代理商审核意见
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

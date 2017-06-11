@@ -1,0 +1,61 @@
+{
+    "material_type":{
+        "material":[
+            {
+
+                "name":"皇家至尊系列",
+                "prefix":"A",
+                "color_serial":[
+                  {
+                    "name_index":"01",
+                    "name":"经典黑",
+                    "color_r":0.2,
+                    "color_g":0.2,
+                    "color_b":0.2
+                  }
+
+                ]
+            },
+          {
+            "index":"A",
+            "name":"皇家至尊系列",
+            "color_serial":[
+              {
+                "name_index":"01",
+                "name":"经典黑",
+                "color_r":0.2,
+                "color_g":0.2,
+                "color_b":0.2
+              }
+
+            ]
+          },
+          {
+            "index":3,
+            "name":"夏目得",
+            "color_serial":[
+              {
+                "name_prefix":"A",
+                "name_index":"01",
+                "name":"经典黑",
+                "color_r":0.2,
+                "color_g":0.2,
+                "color_b":0.2
+              }
+
+            ]
+          }
+        ]
+    },
+
+  "cushion":{
+    "part":[
+      {
+        "name":"around",
+        "material_lock":true,
+        "material":$ref:""
+
+      }
+    ]
+  }
+}
