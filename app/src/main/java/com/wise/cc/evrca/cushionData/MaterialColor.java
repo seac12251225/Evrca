@@ -1,4 +1,4 @@
-package com.wise.cc.evrca.cushion;
+package com.wise.cc.evrca.cushionData;
 /**
  * Auto-generated: 2017-06-10 15:56:17
  *

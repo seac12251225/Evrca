@@ -2,17 +2,16 @@ package layout;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
 import com.wise.cc.evrca.R;
+import com.wise.cc.evrca.cushionData.MaterialColor;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -126,9 +125,43 @@ public class CustomCtr extends Fragment {
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
-     */
+
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+    */
+
+    //------------ 界面 -----------------
+
+    //选择颜色
+    public void selectColor(View v, MaterialColor mColor){
+
+    }
+
+
+    //选择部位
+    public void  selectPart(View v){
+
+        //是否有材质选择
+
+        //由数据生成颜色按钮
+
+        //是否有工艺选择
+
+    }
+
+    //选择子材质
+    public void selectMaterial(View v){
+
+    }
+
+    //选择工艺
+    public void selectCarft(View v){
+
+    }
+
+
+
+
 }

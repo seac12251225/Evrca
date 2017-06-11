@@ -1,4 +1,4 @@
-package  com.wise.cc.evrca.cushion;
+package com.wise.cc.evrca.cushionData;
 import java.util.List;
 
 /**
