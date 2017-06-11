@@ -8,8 +8,8 @@ import android.widget.RadioButton;
 import java.io.InputStreamReader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.wise.cc.evrca.cushion.JsonsRootBean;
-import com.wise.cc.evrca.cushion.MaterialColor;
+import com.wise.cc.evrca.cushionData.JsonsRootBean;
+import com.wise.cc.evrca.cushionData.MaterialColor;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,28 +27,9 @@ public class MainActivity extends AppCompatActivity {
         try{
             InputStreamReader isr = new InputStreamReader(getAssets().open("evrcaProduct.json"));
 
-            Log.d("data","--------------------- load data ----------------------------");
-            //读数据
-            Gson gson=new GsonBuilder().create();
-            JsonsRootBean cuData= gson.fromJson(isr,JsonsRootBean.class);
-            //Log.d("data","cuData: "+cuData.toString().toString());
+            Data.loadDataFromeServer(isr);
 
-            Log.d("data","cushionData name: "+cuData.getMsg());
-
-            Log.d("data","material size: "+Integer.toString(cuData.getMaterial().size()));
-
-            Log.d("data","product size: "+Integer.toString(cuData.getProducts().size()));
-
-            Log.d("data","materialColor size: "+Integer.toString(cuData.getMaterialColor().size()));
-
-            for (int i=0;i<cuData.getMaterialColor().size();i++)
-            {
-                MaterialColor col=cuData.getMaterialColor().get(i);
-                Log.d("data","color name: "+col.getName());
-
-            }
-
-            RadioButton bu=new RadioButton(this);
+            //RadioButton bu=new RadioButton(this);
 
 
 
