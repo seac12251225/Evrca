@@ -17,89 +17,168 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/carinner" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:orientation="horizontal"
+    <fragment
+        android:id="@+id/frag_vision"
+        android:name="layout.VisionCtr"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:layout="@layout/fragment_vision" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="44dp"
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Style" />
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="840dp"
+            tools:layout_editor_absoluteY="120dp">
 
-        <LinearLayout
-            android:id="@+id/layoutAround"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button2"
+            <TextView
+                android:id="@+id/textView4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Around"
-                android:textSize="12sp" />
+                android:text="材质选择"
+                android:textAlignment="center" />
 
-            <Button
-                android:id="@+id/button3"
+            <RadioButton
+                android:id="@+id/buMaterialS1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="48dp"
                 android:layout_weight="1"
-                android:text="Middle"
-                android:textSize="12sp" />
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:checked="true"
+                android:text="皇家至尊系列"
+                android:textAlignment="center" />
 
-            <Button
-                android:id="@+id/button4"
+            <RadioButton
+                android:id="@+id/buMaterialS2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="48dp"
                 android:layout_weight="1"
-                android:text="BorderAround"
-                android:textSize="12sp" />
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:text="皇家雅致系列"
+                android:textAlignment="center" />
 
-            <Button
-                android:id="@+id/button5"
+            <RadioButton
+                android:id="@+id/buMaterialS3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="48dp"
                 android:layout_weight="1"
-                android:text="Border"
-                android:textSize="12sp" />
-        </LinearLayout>
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:text="典雅舒适系列"
+                android:textAlignment="center" />
+        </RadioGroup>
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="840dp"
+            tools:layout_editor_absoluteY="120dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="座垫"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/buStyleOrg"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:checked="true"
+                android:text="原车款"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/buStyleBussine"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:text="商务款"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/buStylePer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:text="个性款"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="脚垫"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/buStyleFoot"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:text="脚垫 "
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/buStyleFootAddition"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_normal_check_style"
+                android:button="@null"
+                android:text="脚垫+幻影"
+                android:textAlignment="center" />
+
+        </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="900dp"
         android:layout_height="160dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginStart="64dp"
-        android:background="#88ffffff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
         <fragment
-            android:id="@+id/fragment"
-            android:name="layout.CustomCtr"
+            android:id="@+id/frag_cart"
+            android:name="layout.CartCtr"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            tools:layout="@layout/fragment_custom" />
+            tools:layout="@layout/fragment_cart" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

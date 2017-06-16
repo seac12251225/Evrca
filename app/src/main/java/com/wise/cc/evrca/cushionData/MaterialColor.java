@@ -11,11 +11,12 @@ public class MaterialColor {
     private String index;
     private String name;
 
-    private double r;
+    private float R;
 
-    private double g;
+    private float G;
 
-    private double b;
+    private float B;
+
     public void setId(String id) {
          this.id = id;
      }
@@ -37,25 +38,25 @@ public class MaterialColor {
          return name;
      }
 
-    public void setR(double r) {
-         this.r = r;
+    public void setR(float r) {
+         this.R = r;
      }
-     public double getR() {
-         return r;
-     }
-
-    public void setG(double g) {
-         this.g = g;
-     }
-     public double getG() {
-         return g;
+     public float getR() {
+         return R;
      }
 
-    public void setB(double b) {
-         this.b = b;
+    public void setG(float g) {
+         this.G = g;
      }
-     public double getB() {
-         return b;
+     public float getG() {
+         return G;
+     }
+
+    public void setB(float b) {
+         this.B = b;
+     }
+     public float getB() {
+         return B;
      }
 
 }

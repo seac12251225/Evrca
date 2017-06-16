@@ -18,7 +18,7 @@ public class Part {
     public void setPartname(String partname) {
          this.partname = partname;
      }
-     public String getPartname() {
+    public String getPartname() {
          return partname;
      }
 

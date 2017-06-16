@@ -11,26 +11,26 @@ public class Material {
 
     private String name;
     private String index;
-    private List<String> colorlist;
+    private List<String> colorList;
     public void setName(String name) {
          this.name = name;
      }
-     public String getName() {
+    public String getName() {
          return name;
      }
 
     public void setIndex(String index) {
          this.index = index;
      }
-     public String getIndex() {
+    public String getIndex() {
          return index;
      }
 
-    public void setColorlist(List<String> colorlist) {
-         this.colorlist = colorlist;
+    public void setColorList(List<String> colorList) {
+         this.colorList = colorList;
      }
-     public List<String> getColorlist() {
-         return colorlist;
-     }
+    public List<String> getColorList() {
+         return colorList;
+    }
 
 }

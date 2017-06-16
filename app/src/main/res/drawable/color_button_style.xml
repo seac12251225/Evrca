@@ -7,26 +7,14 @@
     <item android:state_checked="true"
         android:drawable="@drawable/color_button_select">
 
-        <!--shape
-            android:shape="ring"
-            android:innerRadius="20dp"
-            android:thickness="2dp"
-            android:useLevel="false" android:tint="@color/buttonSelectBorder">
-
-        </shape-->
 
     </item >
 
     <item android:state_checked="false"
+
         android:drawable="@drawable/color_button_unselect">
 
-        <!--shape
-            android:shape="ring"
-            android:innerRadius="20dp"
-            android:thickness="2dp"
-            android:useLevel="false" android:tint="@color/buttonSelectBorder">
 
-        </shape-->
 
     </item >
 
